@@ -1,0 +1,53 @@
+<section class="page-hero">
+  <div class="container">
+    <p class="crumb"><a href="index.html">Home</a><span>/</span>Contact</p>
+    <h1 class="page-hero__title">Contact<span class="jp">お問い合わせ</span></h1>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container contact-grid">
+    <div data-reveal>
+      <p class="lead" style="margin-bottom:2rem;">Web広告の運用、LP・サイト制作、SEO・コンテンツ、動画制作、AI活用のご相談を承ります。「何から始めればよいか」の段階でも構いません。フォームよりお気軽にお問い合わせください。</p>
+      <div class="cinfo__item"><div class="cinfo__l">Company</div><div class="cinfo__v">株式会社SHOMIT</div></div>
+      <div class="cinfo__item"><div class="cinfo__l">Address</div><div class="cinfo__v">〒150-0043<br>東京都渋谷区道玄坂1丁目10番8号<br>渋谷道玄坂東急ビル2F-C</div></div>
+      <div class="cinfo__item"><div class="cinfo__l">Hours</div><div class="cinfo__v">平日 10:00 – 18:00</div></div>
+    </div>
+
+    <div data-reveal data-delay="1">
+      <div class="form__pending" id="formPending" hidden>お問い合わせフォームは現在準備中です。恐れ入りますが、しばらくお待ちください。</div>
+      <form class="form" id="contactForm" novalidate>
+        <div class="form__msg" id="formMsg">メールソフトが起動します。内容をご確認のうえ送信してください。届かない場合はお手数ですが再度お試しください。</div>
+        <div class="frow">
+          <label for="name">お名前 <span class="req">*</span></label>
+          <input type="text" id="name" name="name" required autocomplete="name" placeholder="山田 太郎">
+        </div>
+        <div class="frow">
+          <label for="company">会社名</label>
+          <input type="text" id="company" name="company" autocomplete="organization" placeholder="株式会社〇〇">
+        </div>
+        <div class="frow frow--split">
+          <div class="frow"><label for="email">メール <span class="req">*</span></label><input type="email" id="email" name="email" required autocomplete="email" placeholder="example@mail.com"></div>
+          <div class="frow"><label for="tel">電話番号</label><input type="tel" id="tel" name="tel" autocomplete="tel" placeholder="090-0000-0000"></div>
+        </div>
+        <div class="frow">
+          <label for="category">お問い合わせ種別</label>
+          <select id="category" name="category">
+            <option value="Web広告運用">Web広告運用</option>
+            <option value="LP・Webサイト制作">LP・Webサイト制作</option>
+            <option value="SEO・コンテンツ制作">SEO・コンテンツ制作</option>
+            <option value="動画・クリエイティブ制作">動画・クリエイティブ制作</option>
+            <option value="AI活用・業務自動化">AI活用・業務自動化</option>
+            <option value="その他">その他</option>
+          </select>
+        </div>
+        <div class="frow">
+          <label for="message">お問い合わせ内容 <span class="req">*</span></label>
+          <textarea id="message" name="message" required placeholder="ご相談内容をご記入ください。"></textarea>
+        </div>
+        <p class="form__note">※ 送信ボタンを押すとメールソフトが起動し、入力内容が本文に入った状態で開きます。</p>
+        <button type="submit" class="btn form__submit">Send <svg viewBox="0 0 18 6" fill="none"><path d="M0 3h17M14 1l3 2-3 2" stroke="currentColor"/></svg></button>
+      </form>
+    </div>
+  </div>
+</section>
